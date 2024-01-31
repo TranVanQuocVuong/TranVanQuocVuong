@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread</title>
+</head>
+<body>
+    <!-- 
+        toán tử spread ...
+    -->
+    <script>
+        let obj1 = {
+            name: "hoa",
+            age: 25
+        }
+
+        /* let obj2 = obj1
+        obj1.name = "hồng";
+        console.log("obj2", obj2); */
+
+        // toán tử spread sinh ra để làm gì
+        // clone lại tất cả các thuộc tính của obj1 ra 1 địa chỉ mới.
+        obj2 = {...obj1}
+        obj1.name = "hồng";
+        console.log("obj2", obj2);
+
+        let arr = [
+            {
+                name: "hoa",
+                age: 25
+            },
+            {
+                name: "hồng",
+                age: 25
+            },
+        ];
+        let arr1 = [...arr];
+        arr[0] = 5
+
+        console.log("000000", arr);
+        console.log("111111", arr1);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>destrucstoring</title>
+</head>
+<body>
+    <!-- 
+        dùng nhiều
+        1. destrucstoring với object
+            Đặt tên key phải giống với tên key của object và không cần đúng thứ tự
+        2. destrucstoring với array
+    -->
+    <script>
+        let obj = {
+            name: "hoa",
+            age: 20,
+            address: "Hà Nội",
+        }
+        const {name,age,address} = obj;
+        console.log("name",name);
+        console.log("age",age);
+
+        let number = [4,5]
+        const [a,b,c] = number;
+        console.log(c);
+    </script>
+</body>
+</html>
