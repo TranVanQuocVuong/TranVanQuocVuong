@@ -17,12 +17,7 @@ export default class Form extends Component {
         console.log("userName", this.state.userName);
         console.log("pass", this.state.pass);
     }
-    const changeName=(event)=>{
-        let userName=e.taget.value;
-        this.setState({
-            userName:userName,
-        })
-    }
+
     const changePass=(event)=>{
         let pass=e.taget.value;
         this.setState({
