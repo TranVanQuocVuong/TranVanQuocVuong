@@ -1,0 +1,43 @@
+.main{
+    display: flex;
+    width: 300px;
+    height: 500px;
+    margin: 30px;
+    .imgRegister{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 200px;
+            height: 100px;
+        }
+    }
+    h1{
+        margin: 0;
+    }
+    .formInput{
+        margin-top: 10px;
+        input{
+            width: 300px;
+            height: 25px;
+            border-radius: 5px;
+        }
+    }
+    a{
+        display: flex;
+        justify-content: flex-end;
+        margin: 10px;
+    }
+    .buttonLogin{
+        width: 300px;
+        height: 30px;
+        margin: 0px 0px 10px 0px;
+        background-color: rgb(0, 110, 255);
+        border-radius: 5px;
+    }
+    .footerRegister{
+        display: flex;
+        margin: 10px 0px 10px 0px;
+        border-radius: 5px;
+        height: 40px;
+    }
+}
