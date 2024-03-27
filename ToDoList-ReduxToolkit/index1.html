@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let data = [
+            {
+                id: 1,
+                name: "code",
+                status: true
+            },
+            {
+                id: 2,
+                name: "đi học",
+                status: false
+            },
+            {
+                id: 3,
+                name: "đi chơi",
+                status: false
+            },
+            {
+                id: 4,
+                name: "đá banh",
+                status: true
+            },
+            {
+                id: 5,
+                name: "cầu lông",
+                status: false
+            }
+        ]
+        let temp = {}
+        function name(params) {
+            let dataTrue = data.filter((item)=>{
+                return item.status == true
+            })
+            for (let index = 0; index < data.length; index++) {
+                if (data[index].status == false) {
+                    dataTrue.unshift(data[index])
+                }
+                
+            }
+            console.log("sắp xếp", dataTrue);
+        }
+
+        name()
+    </script>
+</body>
+</html>
